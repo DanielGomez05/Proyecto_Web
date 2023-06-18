@@ -7,7 +7,7 @@ CREATE TABLE Usuario (
   telefono int(12) unique,
   rol_id INT
 );
-drop table usuario;
+
 CREATE TABLE Producto (
   ID_Producto INT PRIMARY KEY,
   Tipo ENUM('Papeleria', 'Merceria'),
@@ -17,7 +17,7 @@ CREATE TABLE Producto (
   Descripcion VARCHAR(100)
   
 );
-DROP TABLE Producto;
+
 CREATE TABLE Pedido (
   ID_Pedido INT PRIMARY KEY,
   ID_Producto INT  unique,
@@ -28,16 +28,16 @@ CREATE TABLE Pedido (
   FOREIGN KEY (ID_Usuario) REFERENCES Usuario(ID_Usuario),
   FOREIGN KEY (ID_Producto) REFERENCES Producto(ID_Producto)
 );
-DROP TABLE Pedido;
 
-drop table Usuario_Producto_Deseado;
+
+
 CREATE TABLE Usuario_Producto_Deseado (
   ID_Usuario INT,
   ID_Producto INT,
   FOREIGN KEY (ID_Usuario) REFERENCES Usuario(ID_Usuario),
   FOREIGN KEY (ID_Producto) REFERENCES Producto(ID_Producto)
 );
-drop table Usuario_Producto_Comprado;
+
 CREATE TABLE Usuario_Producto_Comprado (
   ID_Usuario INT,
   ID_Producto INT,
