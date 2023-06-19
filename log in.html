@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar sesión</title>
+  <style>
+   
+    
+    
+   
+   header {
+    width: 100%;
+      background-color: #8A3F8D; /* Color de fondo inicial */
+     
+    }
+
+    
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5F3F7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-form {
+      background-color: #FFFFFF;
+      position: relative;
+      top: -150px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(147, 78, 78, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .login-form h2 {
+      color: #663399;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        position: relative;
+      width: 100%;
+      padding: 15px;
+      border: 1px solid rgb(89, 90, 181);
+      border-radius: 10px;
+      max-width: 550px;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .login-form input[type="text"]:focus,
+    .login-form input[type="password"]:focus {
+      outline: none;
+      border-color: #663399;
+      box-shadow: 0px 0px 5px rgba(102, 51, 153, 0.5);
+    }
+
+    .login-form input[type="submit"] {
+      background-color: #663399;
+      color: #FFFFFF;
+      font-size: 18px;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .login-form input[type="Redit"] {
+      background-color: #FFFFFF;
+      color: #663399;
+      border: none;
+      padding: 1px    1px;
+      border-radius: 2px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: #5B2C89;
+    }
+    .login-form input[type="Redit"]:hover {
+      background-color: #bdbac1;
+    }
+    
+    .logo-img {
+      max-width: 9%; /* Ajusta el ancho de la imagen según tus necesidades */
+      height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+      
+    }
+    .logo-nombre {
+  /* Estilos personalizados */
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  color: #000000; /* Cambia el color del texto a rojo */
+  font-size: 45vw;
+  font-style: italic;
+ /* Ajusta el tamaño de fuente a 20px */
+   /* Agrega subrayado al texto */
+}
+.nav-link{
+    flex-basis: 30%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -25px;
+    left: 12%;
+    font-size: 1.7vw;
+    font-style: normal;
+    text-decoration: none;
+    margin-right: 7%;
+    color:#fffdfd;
+    min-width: 200px;
+}
+.nav-link:hover{
+    color: rgb(183, 185, 187);
+}
+.logo-nombre{
+    top: -12px;
+    font-size: 3vw;
+    min-block-size: 300px;
+}
+  </style>
+</head>
+<header>
+    
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="company logo" class="logo-img">
+        <p class="logo-nombre">Papeleria Gomita</p>
+    </a>
+    <nav class="nav">
+       
+       <a href="#inicio"    class="nav-link">Inicio</a>
+       <a href="#Papeleria" class="nav-link">Papeleria</a> 
+       <a href="#Merceria"  class="nav-link">Merceria</a>
+        <a href="#contacto"  class="nav-link">Contacto</a> 
+      </nav>
+  </header>
+<body>
+    
+    
+  <div class="container">
+    <form class="login-form" action="/login" method="post">
+      <h2>Iniciar sesión</h2>
+      <input type="text" name="username" placeholder="Nombre de usuario" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <input type="submit" value="Iniciar sesión">
+      <input type="Redit" value="Olvide Contraseña">
+      
+    </form>
+  </div>
+  <div class="rectangle"></div>
+</body>
+</html>
