@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacto - Papelería Papeleria Gomita</title>
+  <style>
+    header {
+    width: 100%;
+      background-color: #8A3F8D; /* Color de fondo inicial */
+     
+    }
+    .logo-img {
+      max-width: 9%; /* Ajusta el ancho de la imagen según tus necesidades */
+      height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+      
+    }
+    .logo-nombre {
+  /* Estilos personalizados */
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  color: #000000; /* Cambia el color del texto a rojo */
+  font-size: 45vw;
+  font-style: italic;
+ /* Ajusta el tamaño de fuente a 20px */
+   /* Agrega subrayado al texto */
+    }
+    .nav-link{
+    flex-basis: 30%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -25px;
+    left: 12%;
+    font-size: 1.7vw;
+    font-style: normal;
+    text-decoration: none;
+    margin-right: 7%;
+    color:#fffdfd;
+    min-width: 200px;
+    }
+    nav {
+      background-color: #8A3F8D;;
+      color: #FFFFFF;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .nav-link:hover{
+    color: rgb(183, 185, 187);
+    }
+    .logo-nombre{
+    top: -12px;
+    font-size: 3vw;
+    min-block-size: 300px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    
+    title{
+        justify-content: center;
+        right: 400px;
+    }
+    h1 {
+        
+      margin: 0;
+    }
+
+   
+
+    .content {
+        display: flex;
+        flex-direction: column ;
+      max-width: 80%;
+      margin: 2% auto;
+      padding: 5%;
+      background-color: #FFFFFF;
+    }
+
+    
+
+    .social-media img {
+      width: 60px;
+      height: 60px;
+      margin-right: 16%;
+    }
+    a.social-media{
+        width: 60px;
+    }
+    .map-container {
+      margin-top: 1%;
+      height:400px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    
+    
+    table{ 
+        
+        text-align: center;
+        
+    }
+    
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg barra">
+            <div class="container-fluid">
+                <a href="index.html" class="logo navbar-brand">
+                    <img src="img/log.jpeg" width="50" height="50" alt="company logo" class="logo-img">
+                   Papeleria Gomita
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="papeleria.html">Papelería</a>
+                    <a class="nav-link" href="merceria.html">Mercería</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="inicio_sesion.jsp">Iniciar sesión</a>
+                    <a class="nav-link" href="registrarse.jsp">Registrarse</a>
+                  </div>
+                </div>
+                
+            </div>
+          </nav>
+    </header>
+  <div class="content">
+    <h2>Información de contacto</h2>
+    <p>¡Nos encantaría saber de ti! Puedes contactarnos a través de los siguientes medios:</p>
+    
+        <table class="table">
+            <tr>
+                 <th>
+                    <a class="social-media" href="https://www.instagram.com/papeleriaxyz/"><img src="img/Instagram logo.png" alt="Instagram"></a>
+                 </th>
+                <th>
+                    <a class="social-media" href="https://www.facebook.com/papeleriaxyz/"><img src="img/facebook logo.png" alt="Facebook"></a>
+                </th>
+                <th>
+                    <a class="social-media" href="https://twitter.com/papeleriaxyz/"><img src="img/twittwer logo.png" alt="Twitter"></a>
+                </th>
+                <th>
+                    <a class="social-media" href="tel:+1234567890"><img src="img/descarga.png" alt="WhatsApp"></a>
+                </th>
+                
+            </tr>
+            <tr >
+                
+               <th>
+                <a class="social-media" href="https://www.instagram.com/papeleriaxyz/"></ahref >@papeleriagomita</a>
+               </th>
+                <th>
+                <a class="social-media" href="https://www.facebook.com/papeleriaxyz/">Papeleria Gomita</a>  
+                </th>
+                <th>
+                <a class="social-media" href="https://twitter.com/papeleriaxyz/">@PapeGomita</a>
+                </th>                 
+                <th>
+                <a class="social-media" href="tel:+52 55 5534 5514">55 5534 5514</a>
+                </th>
+                               
+            
+            </tr>
+          </table>
+      
+    
+    
+    
+    <div class="map-container">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.4880915027716!2d-99.0796527!3d19.649171299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f395528cace5%3A0x843470c9e236b483!2sAv.%20Manuel%20Morelos%2C%20Estado%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1687409714158!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+  </div>
+</body>
+</html>
