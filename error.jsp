@@ -1,8 +1,4 @@
-<%-- 
-    Document   : error
-    Created on : 14/06/2023, 02:17:48 PM
-    Author     : Uzías
---%>
+
 
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8" session="true"%>
 <!DOCTYPE html>
