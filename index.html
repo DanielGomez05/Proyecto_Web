@@ -1,68 +1,111 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Papelería Gomita</title>
-  <link rel="stylesheet" href="css/estilos.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <meta charset="utf-8">
-</head>
-<body>
-    <!-- Cargar el script para bootstrap -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <header>
-        <nav class="navbar navbar-expand-lg barra">
-            <div class="container-fluid">
-                <a href="index.html" class="logo navbar-brand">
-                    <img src="img/log.jpeg" width="50" height="50" alt="company logo" class="logo-img">
-                   Papeleria Gomita
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                    <a class="nav-link" href="papeleria.html">Papelería</a>
-                    <a class="nav-link" href="merceria.html">Mercería</a>
-                    <a class="nav-link" href="#">Contacto</a>
-                    <a class="nav-link" href="inicio_sesion.jsp">Iniciar sesión</a>
-                    <a class="nav-link" href="registrarse.jsp">Registrarse</a>
-                  </div>
-                </div>
-                
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PAPELERÍA GOMITA</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="css2/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navegación-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Menú</a></li>
+                <li class="sidebar-nav-item"><a href="index.html">Inicio</a></li>
+                <li class="sidebar-nav-item"><a href="papeleria.jsp">Papelería</a></li>
+                <li class="sidebar-nav-item"><a href="merceria.jsp">Mercería</a></li>
+                <li class="sidebar-nav-item"><a href="Contacto.html">Contacto</a></li>
+                <li class="sidebar-nav-item"><a href="inicio_sesion.jsp">Iniciar sesión</a></li>
+                <li class="sidebar-nav-item"><a href="registrarse.jsp">Registrarse</a></li>
+            </ul>
+        </nav>
+        <!-- Encabezado-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Papelería Gomita</h1>
+                <h3 class="mb-5"><em>¡ENCUENTRA TODO LO QUE NECESITAS PARA TU OFICINA!</em></h3>
             </div>
-          </nav>
-    </header>
-  
- 
-  <section id="inicio">
-    <h2>¡Encuentra todo lo que necesitas para tu oficina!</h2>
-    <p>Bienvenido a Papelería XYZ, tu tienda en línea especializada en suministros de oficina. Contamos con una amplia selección de productos de calidad para satisfacer todas tus necesidades. Desde papel y bolígrafos hasta carpetas y archivadores, aquí encontrarás todo lo que necesitas para mantener tu oficina organizada.</p>
-  </section>
-  
-  <section id="productos">
-    <h2>Nuestros Productos</h2>
-    <ul>
-      <li>Papel</li>
-      <li>Bolígrafos y lápices</li>
-      <li>Cuadernos y libretas</li>
-      <li>Archivadores y carpetas</li>
-      <li>Sobres y etiquetas</li>
-      <li>Artículos de escritorio</li>
-      <li>Y mucho más...</li>
-    </ul>
-  </section>
-  
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Tienes alguna pregunta o necesitas ayuda? No dudes en ponerte en contacto con nosotros.</p>
-    <p>Teléfono: 123-456-7890</p>
-    <p>Correo electrónico: info@papeleriaxyz.com</p>
-  </section>
-  
-  <footer>
-    <p>&copy; 2023 Papelería Gomita. Todos los derechos reservados.</p>
-  </footer>
-</body>
-</html>
+        </header>
+        <!-- Servicios-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Servicios</h3>
+                    <h2 class="mb-5" style="color: black;">¿Qué ofrecemos?</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4 style="color: black;"><strong>Soporte en dispositivos móviles</strong></h4>
+                        <p class="text-faded mb-0" style="color: black;" >¡Puedes ver  la página desde tu teléfono celular!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-lock"></i></span>
+                        <h4 style="color: black;"><strong>Seguridad</strong></h4>
+                        <p class="text-faded mb-0" style="color: black;">Tus datos personales están seguros con nosotros. Puedes comprar con toda confianza.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4 style="color: black;"><strong>Experiencia</strong></h4>
+                        <p class="text-faded mb-0" style="color: black;">
+                            Referencias  nos respaldan, junto con la opinión de nuestros clientes.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-check"></i></span>
+                        <h4 style="color: black;"><strong>Calidad</strong></h4>
+                        <p class="text-faded mb-0" style="color: black;">Manejamos productos con los más altos estándares de calidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- botón para ir a inicio-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
 
+        <!--FOOTER-->
+        
+            <footer class="bg-dark text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4">
+                  <!-- Section: Social media -->
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/papeleriaxyz" role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+              
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/papeleriaxyz/" role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+              
+                    
+              
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/papeleriaxyz/" role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+              
+                    
+              
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/DanielGomez05/Proyecto_Web.git" role="button"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <div class="text-center p-4" >
+                        © 2021 Todos los derechos reservados
+                    </div>
+                  </section>
+                  </footer>
+    </body>
+</html>
